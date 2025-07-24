@@ -1,0 +1,370 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.navbar {
+    background: #f6f8fc;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo-img {
+    height: 36px;
+}
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f36c21;
+    letter-spacing: 1px;
+}
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-menu li a:hover {
+    color: #f36c21;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+.nav-cart-mobile {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+
+.banner {
+    background: #f6f8fc;
+    padding: 3rem 0 2rem 0;
+}
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.banner-text {
+    flex: 1;
+}
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+}
+.highlight {
+    color: #f36c21;
+}
+.banner-text p {
+    font-size: 1.1rem;
+    color: #444;
+}
+.banner-img {
+    flex: 1;
+    text-align: right;
+}
+.banner-img img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.plants-section {
+    background: #f6f8fc;
+    padding: 3rem 0 2rem 0;
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.plant-card {
+    background: #f6f8fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.plant-card img {
+    width: 100%;
+    max-width: 160px;
+    border-radius: 8px;
+}
+.plant-info {
+    text-align: center;
+}
+.plant-name {
+    font-weight: 600;
+    display: block;
+}
+.plant-price {
+    color: #222;
+    font-weight: 700;
+    display: block;
+}
+.add-cart-btn {
+    background: #f36c21;
+    color: #f6f8fc;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    cursor: pointer;
+
+}
+.add-cart-btn:hover {
+    background: #d35400;
+}
+
+
+.plants-lover-section {
+    background: #f6f8fc;
+    padding: 3rem 0 2rem 0;
+}
+.plants-lover-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.plants-lover-img-wrapper {
+    position: relative;
+    flex: 1;
+}
+.plants-lover-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+}
+.trusted-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 80px;
+    z-index: 2;
+    display: block;
+}
+.plants-lover-text {
+    flex: 2;
+}
+.plants-lover-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.plants-lover-text ul {
+    color: #444;
+    font-size: 1.1rem;
+    padding-left: 1.2rem;
+}
+
+
+.deals-section {
+    background: #f6f8fc;
+    padding: 3rem 0 2rem 0;
+}
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.deal-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    min-height: 160px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+.deal-overlay {
+    background: rgba(0,0,0,0.4);
+    color: #f6f8fc;
+    width: 100%;
+    padding: 5.5    rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 0 12px 12px;
+}
+.deal-discount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.deal-btn {
+
+    background: None;
+    border: none;
+    color: #f6f8fc;
+    padding: 0.4rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+
+
+.join-section {
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0 3rem 0;
+    color: #f6f8fc;
+    text-align: center;
+    position: relative;
+}
+.join-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.join-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.join-form input[type="email"] {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+.join-form button {
+    background: #f36c21;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.join-form button:hover {
+    background: #d35400;
+}
+
+
+.footer {
+    background: #f6f8fc;
+    padding: 2.5rem 0 1.5rem 0;
+    border-top: 1px solid #eee;
+}
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.footer-logo-section {
+    flex: 1;
+    min-width: 220px;
+}
+.footer-logo {
+    height: 36px;
+    vertical-align: middle;
+}
+.footer-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f36c21;
+    margin-left: 0.5rem;
+}
+.footer-desc {
+    color: #666;
+    margin: 1rem 0 0 0;
+}
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    flex: 2;
+    min-width: 220px;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+.footer-links a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #f36c21;
+}
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    min-width: 120px;
+}
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #f6f8fc;
+    padding: 4px;
+
+}
+.footer-social img:hover {
+    background: #f36c21;
+}
